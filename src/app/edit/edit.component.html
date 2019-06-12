@@ -1,0 +1,24 @@
+<form class="form" [formGroup]="updateList" (ngSubmit)="onUpdateList()">
+    
+  <mat-form-field  appearance="outline" class="outline" for="title">
+        <mat-label class="label">Ride</mat-label>
+        <input class="input" formControlName="ride" type="text" name="ride" matInput placeholder="Enter a ride">
+      </mat-form-field>
+      <br>
+
+      <mat-form-field  appearance="outline" class="outline" for="title">
+          <mat-label class="label">Park</mat-label>
+          <input class="input" formControlName="park" type="text" name="park" matInput placeholder="Enter a park">
+        </mat-form-field>
+    
+          <br>
+          <mat-form-field  appearance="outline" class="outline" for="title">
+              <mat-label class="label">Land</mat-label>
+              <input class="input" formControlName="land" type="text" name="land" matInput placeholder="Enter a land">
+            </mat-form-field>
+            <mat-dialog-actions>
+                <button mat-raised-button type="submit" class="button">Create</button>
+                <button mat-raised-button mat-dialog-close class="button">Cancel</button>
+              </mat-dialog-actions>
+
+</form>

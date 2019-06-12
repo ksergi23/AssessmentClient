@@ -1,0 +1,18 @@
+<div class="header">
+  <h2>Walt Disney World Ride List</h2>
+  <p>Create a list for rides at Walt Disney World based on the park and what land they are in.</p>
+  <button mat-raised-button (click)="openDialog()" id="create">Create an Item</button>
+  <div *ngFor= "let list of lists">
+      <mat-card class="display"  > 
+          <mat-card-content>
+          <p> Ride: {{list.ride}} </p>
+          <p> Park: {{list.park}} </p>
+          <p> Land: {{list.land}} </p>
+        </mat-card-content>
+        <mat-card-actions>
+            <button  mat-button (click)="updateDialog(list)" class="button">Edit</button>
+            <button  mat-button (click)="deleteList(list.id)" class="button">Delete</button>
+      </mat-card-actions>
+    </mat-card>
+  </div>
+</div>

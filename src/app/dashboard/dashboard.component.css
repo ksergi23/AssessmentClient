@@ -1,0 +1,20 @@
+.display{
+    margin: 2em;
+    background-color: rgb(173, 167, 167);
+    width: 15vw;
+    display: inline-block;
+    
+}
+
+.button{
+    background-color:rgb(124, 153, 231);
+}
+
+#create{
+    background-color: rgb(124, 153, 231);
+}
+
+.header{
+    color: white;
+}
+
